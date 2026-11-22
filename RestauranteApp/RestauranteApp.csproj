@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Modelos\" />
     <Folder Include="Negocio\" />
     <Folder Include="Formularios\" />
   </ItemGroup>
