@@ -1,6 +1,4 @@
-﻿using RestauranteApp.Formularios;
-
-namespace RestauranteApp.Formularios
+﻿namespace RestauranteApp.Formularios
 {
     public partial class FrmPrincipal : Form
     {
@@ -12,8 +10,8 @@ namespace RestauranteApp.Formularios
             btnMesas.Click += btnMesas_Click;
             btnProductos.Click += btnProductos_Click;
             btnCategorias.Click += btnCategorias_Click;
+            btnReportes.Click += btnReportes_Click;
             btnSalir.Click += btnSalir_Click;
-            // El botón de Reportes se conecta en el siguiente paso
         }
 
         // Cada botón abre su formulario de forma modal: el principal queda
@@ -49,6 +47,11 @@ namespace RestauranteApp.Formularios
         private void btnCategorias_Click(object? sender, EventArgs e)
         {
             AbrirFormulario(new FrmCategorias());
+        }
+
+        private void btnReportes_Click(object? sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmReportes());
         }
 
         private void btnSalir_Click(object? sender, EventArgs e)
